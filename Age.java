@@ -31,9 +31,13 @@ public class Age {
         {
             diffM = cuMonth - month;
         }
-        if(cuDay < day)
+        if((month == 11 || month == 4 || month == 6 || month == 9) && cuDay < day)
         {
-            diffD = day;
+            diffD = 30-(day-cuDay);
+        }
+        else if((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && cuDay < day)
+        {
+            diffD = 31-(day-cuDay);
         }
         else
         {

@@ -2,7 +2,7 @@ public class Age {
 
     private int year, month, day;
     private int cuYear, cuMonth, cuDay;
-
+    // creating parameters on a basic method
     public Age(int one, int two, int three, int four, int five, int six)
     {
         year = three;
@@ -12,6 +12,7 @@ public class Age {
         cuMonth = five;
         cuDay = four;
     }
+    // calculating age on a void method because I dont like return statements
     public void calculator()
     {
         int diffY = cuYear - year;
@@ -39,7 +40,7 @@ public class Age {
             } else {
                 diffD = cuDay - day;
             }
-            System.out.println("Age = " + " Year: " + diffY + " Month: " + diffM + " Day: " + diffD);
+            System.out.println("Your are " +  diffY + " years " +   diffM + " months and " + diffD + " days old\n");
         }
 
     }
